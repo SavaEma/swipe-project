@@ -43,7 +43,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: var(--purple-1);
+  background-color: var(--bg-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,14 +256,32 @@ a:hover {
   background-color: rgba(250, 250, 250, 0.5);
 }
 
-/* HERO */
+/* HERO STYLES*/
+
+main {
+  margin: var(--spacing-xl) 0;
+}
+
+.hero .two-column .col-left p {
+  max-width: 480px;
+}
 
 .button-container {
   display: flex;
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
 }
 
-.hero .two-column .col-right {
-  display: flex;
-  justify-content: center;
-  padding: 0;
+.button-container .secondary-button {
+  color: var(--purple-2);
+}
+
+.hero .hero-phone-container {
+  height: 564px;
+  align-items: flex-end;
+}
+
+.hero-phone {
+  height: 628px;
+  transform: translate(32px, -32px);
 }
