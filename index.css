@@ -52,6 +52,10 @@ body {
   align-items: center;
 }
 
+main {
+  width: 100%;
+}
+
 h1 {
   font-family: var(--heading-font);
   font-weight: 600;
@@ -283,6 +287,12 @@ main {
   margin: var(--spacing-xl) 0;
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .hero .two-column .col-left p {
   max-width: 480px;
 }
@@ -309,6 +319,12 @@ main {
 
 /* PARTNERS SECTION */
 
+.partners-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .partners-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -326,6 +342,9 @@ main {
 /* UNIFIED PLATFORM SECTION */
 
 .unified-platform-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin: var(--spacing-xl) 0;
 }
 
@@ -343,6 +362,12 @@ main {
 }
 
 /* GRAPHIC GRID SECTION */
+
+.graphic-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .graphic-section .graphic-grid {
   display: grid;
@@ -379,6 +404,12 @@ main {
 }
 
 /* INTEGRATIONS SECTION */
+
+.integrations-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .integrations-section {
   color: var(--text-light);
@@ -421,6 +452,12 @@ main {
 
 /* WHY SWIPE SECTION */
 
+.why-swipe-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .why-swipe-section .card-container {
   display: flex;
   margin: var(--spacing-lg) 0;
@@ -435,4 +472,51 @@ main {
 
 .why-swipe-section .secondary-text {
   color: var(--text-dark);
+}
+
+/* GLOBAL SECTION */
+
+.global-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--primary-accent);
+  color: var(--text-light);
+  position: relative;
+  padding: calc(var(--spacing-xl) * 3) 0;
+}
+
+.global-section a {
+  color: var(--blue-1);
+}
+
+.global-section a:hover {
+  color: var(--text-light);
+}
+
+.global-section .card-container {
+  display: flex;
+  margin: calc(var(--spacing-xl) * 2) 0;
+  z-index: 1;
+}
+
+.global-section .card-container .card {
+  width: 25%;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+  box-sizing: border-box;
+}
+
+.global-section .card-container .card h3 {
+  border-left: 2px solid var(--blue-1);
+  padding: 0 0 0 var(--spacing-sm);
+  line-height: 28px;
+}
+
+#globe {
+  z-index: 0;
+  max-width: 844px;
+  opacity: 25%;
+  position: absolute;
+  top: 10%;
 }
