@@ -57,6 +57,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-light);
 }
 
 main {
@@ -295,6 +296,7 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: var(--bg-white);
 }
 
 .hero .two-column .col-left p {
@@ -327,6 +329,7 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: var(--bg-white);
 }
 
 .partners-grid {
@@ -349,7 +352,7 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-xl) 0;
 }
 
 .unified-platform-section h2 {
@@ -413,11 +416,22 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  color: var(--text-light);
+  padding: calc(var(--spacing-xl) * 3) 0;
+  position: relative;
+  z-index: 1;
 }
 
-.integrations-section {
-  color: var(--text-light);
+.integrations-section::before {
+  content: "";
   background-color: var(--primary-accent);
+  z-index: -1;
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  top: -32px;
+  left: 0;
+  transform: skewY(-10deg);
 }
 
 .integrations-section .card-container {
@@ -460,6 +474,7 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: calc(var(--spacing-xl) * 3) 0;
 }
 
 .why-swipe-section .card-container {
@@ -484,10 +499,20 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: var(--primary-accent);
   color: var(--text-light);
   position: relative;
-  padding: calc(var(--spacing-xl) * 3) 0;
+  padding: calc(var(--spacing-xl) * 3) 0 0 0;
+}
+
+.global-section::before {
+  content: "";
+  background-color: var(--primary-accent);
+  width: 100%;
+  height: 1200px;
+  z-index: -2;
+  position: absolute;
+  top: -32px;
+  transform: skewY(-10deg);
 }
 
 .global-section a {
@@ -532,7 +557,19 @@ a:hover {
   justify-content: center;
   width: 100%;
   padding: calc(var(--spacing-xl) * 2) 0;
+  position: relative;
 }
+
+.virtual-events-section::before {
+  content: "";
+  background-color: var(--bg-white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
 .virtual-events-section .primary-button {
   background-color: var(--purple-1);
   margin: var(--spacing-md) 0 0 0;
