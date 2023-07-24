@@ -867,6 +867,43 @@ a:hover {
   .virtual-events-section .swipe-sessions-card .secondary-text {
     width: 100%;
   }
+
+  /* GETTING STARTED SECTION */
+
+  .getting-started-section .two-column {
+    align-items: center;
+  }
+
+  .getting-started-section .card-container {
+    flex-wrap: wrap;
+  }
+
+  .getting-started-section .card-container .card {
+    width: 100%;
+    margin: 0 0 var(--spacing-md) 0;
+  }
+
+  /* FOOTER */
+
+  .footer .section-container {
+    flex-wrap: wrap;
+  }
+
+  .footer .col a {
+    font-size: 12px;
+  }
+
+  .footer .col {
+    width: 50%;
+  }
+
+  #logo {
+    width: 70px;
+  }
+
+  .footer .icon-link img {
+    width: 18px;
+  }
 }
 
 /*  MOBILE SIZE */
