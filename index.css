@@ -45,6 +45,13 @@
   );
 }
 
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--body-font);
   color: var(--text-dark);
@@ -780,6 +787,15 @@ a:hover {
     width: 100%;
     height: auto;
   }
+
+  /* INTEGRATIONS SECTION*/
+
+  .integrations-section .col-left {
+    width: 60%;
+  }
+  .integrations-section .col-right {
+    width: 40%;
+  }
 }
 
 /* TABLET SIZE */
@@ -794,6 +810,19 @@ a:hover {
   /* UNIFIED PLATFORM SECTION */
 
   .unified-platform-section h2 {
+    width: 100%;
+  }
+
+  /* INTEGRATIONS SECTION*/
+
+  .integrations-section .col-right {
+    display: none;
+  }
+
+  .integrations-section .card-container {
+    flex-direction: column;
+  }
+  .integrations-section .card-container .card {
     width: 100%;
   }
 }
