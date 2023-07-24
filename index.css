@@ -848,6 +848,25 @@ a:hover {
     width: 50%;
     margin: var(--spacing-md) 0;
   }
+
+  /* VIRTUAL EVENTS SECTION */
+
+  .virtual-events-section .col-left {
+    height: 446px;
+    padding: 0 var(--spacing-sm) 0 0;
+  }
+
+  .virtual-events-section .swipe-sessions-card {
+    width: 350px;
+  }
+
+  #swipe-sessions {
+    width: 270px;
+  }
+
+  .virtual-events-section .swipe-sessions-card .secondary-text {
+    width: 100%;
+  }
 }
 
 /*  MOBILE SIZE */
@@ -895,5 +914,20 @@ a:hover {
 
   #globe {
     opacity: 10%;
+  }
+
+  /* VIRTUAL EVENTS SECTION */
+
+  .virtual-events-section .swipe-sessions-card {
+    width: 100%;
+    margin: var(--spacing-lg) 0;
+  }
+
+  .virtual-events-section .swipe-sessions-card .card-top {
+    height: 40%;
+  }
+
+  .virtual-events-section .swipe-sessions-card .secondary-text {
+    width: 100%;
   }
 }
