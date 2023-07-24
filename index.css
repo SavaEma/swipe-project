@@ -836,6 +836,18 @@ a:hover {
     width: 50%;
     margin: var(--spacing-md) 0;
   }
+
+  /* GLOBAL SECTION */
+
+  .global-section .card-container {
+    flex-wrap: wrap;
+    margin: var(--spacing-xl) 0;
+  }
+
+  .global-section .card-container .card {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
 }
 
 /*  MOBILE SIZE */
@@ -872,5 +884,16 @@ a:hover {
 
   .why-swipe-section .card-container img {
     height: 35px;
+  }
+
+  /* GLOBAL SECTION */
+
+  .global-section .card-container .card {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
+
+  #globe {
+    opacity: 10%;
   }
 }
