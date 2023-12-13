@@ -35,6 +35,7 @@
   --bg-white: white;
   --bg-light: #f7f9fc;
 
+  --standard-border-radius: 20px;
   --standard-box-shadow: 0 2px 40px rgba(0, 0, 0, 0.15);
   --primary-gradient: linear-gradient(
     101.33deg,
@@ -183,7 +184,7 @@ a:hover {
   color: var(--text-light);
   background-color: var(--primary-accent);
   border: none;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   padding: var(--spacing-sm) var(--spacing-md);
   transition: all 0.15s ease;
 }
@@ -200,7 +201,7 @@ a:hover {
   font-weight: bold;
   color: var(--primary-accent);
   background-color: transparent;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   border: none;
   transition: all 0.15s ease;
 }
@@ -418,24 +419,26 @@ a:hover {
   grid-area: card;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: var(--standard-border-radius);
 }
 
 #invoice {
   grid-area: invoice;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: bo var(--standard-border-radius);
 }
 
 #phone {
   grid-area: phone;
   width: 100%;
-  box-shadow: var(--standard-box-shadow);
 }
 
 #dash {
   grid-area: dash;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: var(--standard-border-radius);
 }
 
 /* INTEGRATIONS SECTION */
@@ -499,7 +502,7 @@ a:hover {
 #terminal-code {
   max-width: 470px;
   margin: 0 0 var(--spacing-md) 0;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
 }
 
 #api-code {
@@ -626,7 +629,7 @@ a:hover {
   width: 540px;
   height: 446px;
   box-shadow: var(--standard-box-shadow);
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   overflow: hidden;
 }
 
@@ -855,7 +858,7 @@ a:hover {
     width: 50px;
     height: 30px;
     background-color: rgba(250, 250, 250, 0.25);
-    border-radius: 20px;
+    border-radius: var(--standard-border-radius);
     display: flex;
     flex-direction: column;
     justify-content: center;
